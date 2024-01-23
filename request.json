@@ -1,0 +1,125 @@
+{
+    "books": [
+        [
+            1,
+            "The Great Gatsby",
+            "F. Scott Fitzgerald",
+            "En roman om den amerikanska dr\u00f6mmen",
+            "Sk\u00f6nlitteratur"
+        ],
+        [
+            2,
+            "To Kill a Mockingbird",
+            "Harper Lee",
+            "En ber\u00e4ttelse om rasinjustis i den amerikanska s\u00f6dern",
+            "Sk\u00f6nlitteratur"
+        ],
+        [
+            3,
+            "1984",
+            "George Orwell",
+            "En dystopisk roman om en totalit\u00e4r regim",
+            "Science Fiction"
+        ],
+        [
+            4,
+            "Pride and Prejudice",
+            "Jane Austen",
+            "En klassisk roman om k\u00e4rlek och social status",
+            "Romantik"
+        ],
+        [
+            5,
+            "The Catcher in the Rye",
+            "J.D. Salinger",
+            "En ungdomsroman om en ton\u00e5ring i New York",
+            "Sk\u00f6nlitteratur"
+        ],
+        [
+            6,
+            "The Hobbit",
+            "J.R.R. Tolkien",
+            "En fantasyroman om en hobbit p\u00e5 en episk resa",
+            "Fantasy"
+        ],
+        [
+            7,
+            "The Da Vinci Code",
+            "Dan Brown",
+            "En mysteriethriller med konst och religion",
+            "Mysterium"
+        ],
+        [
+            8,
+            "Harry Potter and the Sorcerer's Stone",
+            "J.K. Rowling",
+            "F\u00f6rsta boken i Harry Potter-serien",
+            "Fantasy"
+        ],
+        [
+            9,
+            "The Hunger Games",
+            "Suzanne Collins",
+            "En dystopisk roman om en d\u00f6dlig t\u00e4vling",
+            "Science Fiction"
+        ],
+        [
+            10,
+            "The Lord of the Rings",
+            "J.R.R. Tolkien",
+            "En episk fantasytrilogi",
+            "Fantasy"
+        ],
+        [
+            11,
+            "The Shining",
+            "Stephen King",
+            "En skr\u00e4ckroman om ett hems\u00f6kt hotell",
+            "Skr\u00e4ck"
+        ],
+        [
+            12,
+            "The Girl with the Dragon Tattoo",
+            "Stieg Larsson",
+            "En krimithriller med en journalist och en hacker",
+            "Mysterium"
+        ],
+        [
+            13,
+            "The Hitchhiker's Guide to the Galaxy",
+            "Douglas Adams",
+            "En komisk science fiction-serie",
+            "Science Fiction"
+        ],
+        [
+            14,
+            "The Chronicles of Narnia",
+            "C.S. Lewis",
+            "En serie fantasyromaner f\u00f6r barn",
+            "Fantasy"
+        ],
+        [
+            15,
+            "Brave New World",
+            "Aldous Huxley",
+            "En dystopisk roman som utforskar konsekvenserna av teknologi",
+            "Science Fiction"
+        ]
+    ],
+    "reviews": [
+        [
+            1,
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            2,
+            "",
+            "",
+            "",
+            ""
+        ]
+    ]
+}
