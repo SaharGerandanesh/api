@@ -1,7 +1,5 @@
 from flask import Flask, request, jsonify, abort
 from flask_sqlalchemy import SQLAlchemy
-import json
-from functools import wraps
 import requests
 
 app = Flask(__name__)
@@ -40,20 +38,13 @@ def fetch_data_from_db():
 
     return books_data
 
-# Funktion för att spara data till en JSON-fil
-def save_to_json(data):
-    with open('request.json', 'w') as json_file:
-        json_file.write(json.dumps(data, indent=4))
-
 # Dekorator för att skriva ut SQL-query vid varje anrop till en funktion
 def print_query(func):
-    @wraps(func)
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
         query = str(db.session.query(Books))
         print(f"Executing query: {query}")
         return result
-
     return wrapper
 
 # Krav: GET /books - Hämtar alla böcker i databasen.
@@ -80,9 +71,24 @@ def add_books():
     return jsonify({"message": "Books added successfully"})
 
 # Krav: GET /books/{book_id} - Hämtar en enskild bok.
+@app.route('/books/<int:book_id>', methods=['GET'])
+@print_query
+def get_book(book_id):
+    book = Books.query.get(book_id)
+    if not book:
+        abort(404, "Book not found")
+    
+    return jsonify({"book": {
+        "id": book.id,
+        "title": book.title,
+        "author": book.author,
+        "summary": book.summary,
+        "genre": book.genre
+    }})
+
 # Krav: PUT /books/{book_id} - Uppdaterar information om en enskild bok.
 # Krav: DELETE /books/{book_id} - Tar bort en enskild bok
-@app.route('/books/<int:book_id>', methods=['GET', 'PUT', 'DELETE'])
+@app.route('/books/<int:book_id>', methods=['PUT', 'DELETE'])
 @print_query
 def manage_book(book_id):
     book = Books.query.get_or_404(book_id)
@@ -128,8 +134,19 @@ def get_reviews_for_book(book_id):
 @app.route('/books/top', methods=['GET'])
 @print_query
 def get_top_books():
-    # Implementera logiken för att hämta de fem böckerna med högst genomsnittliga recensioner här.
-    return jsonify({"message": "Top books retrieved successfully"})
+    top_books = db.session.query(Books, db.func.avg(Reviews.rating).label('average_rating')).join(Reviews).group_by(Books).order_by(db.desc('average_rating')).limit(5).all()
+    top_books_data = []
+    for book, avg_rating in top_books:
+        top_books_data.append({
+            "id": book.id,
+            "title": book.title,
+            "author": book.author,
+            "summary": book.summary,
+            "genre": book.genre,
+            "average_rating": avg_rating
+        })
+    
+    return jsonify({"top_books": top_books_data})
 
 # Krav: GET /author - Hämtar en kort sammanfattning om författaren och författarens mest kända verk.
 @app.route('/author', methods=['GET'])
@@ -139,8 +156,8 @@ def get_author_info():
     if not author_name:
         abort(400, "Missing author_name parameter")
 
-    # Krav: Ett externt API för att hämta författarens korta sammanfattning
-    summary_url = f'https://book/rest_v1/page/summary/{author_name}'
+    # Krav: Använd ett externt API för att hämta författarens korta sammanfattning
+    summary_url = f'https://en.wikipedia.org/api/rest_v1/page/summary/{author_name}'
     summary_response = requests.get(summary_url)
 
     if summary_response.status_code != 200:
@@ -151,6 +168,4 @@ def get_author_info():
 
     return jsonify({"author_summary": author_summary})
 
-if __name__ == "__main__":
-    db.create_all()
-    app.run(debug=True)
+
