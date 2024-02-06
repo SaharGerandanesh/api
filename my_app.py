@@ -135,6 +135,13 @@ def get_reviews_for_book(book_id):
 @print_query
 def get_top_books():
     top_books = db.session.query(Books, db.func.avg(Reviews.rating).label('average_rating')).join(Reviews).group_by(Books).order_by(db.desc('average_rating')).limit(5).all()
+
+    # Kontrollera om top_books är tom
+    if not top_books:
+        # Returnera en meddelande om att det inte finns några böcker med recensioner
+        return jsonify({"message": "No books with reviews found"}), 404
+
+    # Skapa top_books_data
     top_books_data = []
     for book, avg_rating in top_books:
         top_books_data.append({
@@ -147,6 +154,7 @@ def get_top_books():
         })
     
     return jsonify({"top_books": top_books_data})
+
 
 # Krav: GET /author - Hämtar en kort sammanfattning om författaren och författarens mest kända verk.
 @app.route('/author', methods=['GET'])
