@@ -1,125 +1,685 @@
-{
-    "books": [
-        [
-            1,
-            "The Great Gatsby",
-            "F. Scott Fitzgerald",
-            "En roman om den amerikanska dr\u00f6mmen",
-            "Sk\u00f6nlitteratur"
-        ],
-        [
-            2,
-            "To Kill a Mockingbird",
-            "Harper Lee",
-            "En ber\u00e4ttelse om rasinjustis i den amerikanska s\u00f6dern",
-            "Sk\u00f6nlitteratur"
-        ],
-        [
-            3,
-            "1984",
-            "George Orwell",
-            "En dystopisk roman om en totalit\u00e4r regim",
-            "Science Fiction"
-        ],
-        [
-            4,
-            "Pride and Prejudice",
-            "Jane Austen",
-            "En klassisk roman om k\u00e4rlek och social status",
-            "Romantik"
-        ],
-        [
-            5,
-            "The Catcher in the Rye",
-            "J.D. Salinger",
-            "En ungdomsroman om en ton\u00e5ring i New York",
-            "Sk\u00f6nlitteratur"
-        ],
-        [
-            6,
-            "The Hobbit",
-            "J.R.R. Tolkien",
-            "En fantasyroman om en hobbit p\u00e5 en episk resa",
-            "Fantasy"
-        ],
-        [
-            7,
-            "The Da Vinci Code",
-            "Dan Brown",
-            "En mysteriethriller med konst och religion",
-            "Mysterium"
-        ],
-        [
-            8,
-            "Harry Potter and the Sorcerer's Stone",
-            "J.K. Rowling",
-            "F\u00f6rsta boken i Harry Potter-serien",
-            "Fantasy"
-        ],
-        [
-            9,
-            "The Hunger Games",
-            "Suzanne Collins",
-            "En dystopisk roman om en d\u00f6dlig t\u00e4vling",
-            "Science Fiction"
-        ],
-        [
-            10,
-            "The Lord of the Rings",
-            "J.R.R. Tolkien",
-            "En episk fantasytrilogi",
-            "Fantasy"
-        ],
-        [
-            11,
-            "The Shining",
-            "Stephen King",
-            "En skr\u00e4ckroman om ett hems\u00f6kt hotell",
-            "Skr\u00e4ck"
-        ],
-        [
-            12,
-            "The Girl with the Dragon Tattoo",
-            "Stieg Larsson",
-            "En krimithriller med en journalist och en hacker",
-            "Mysterium"
-        ],
-        [
-            13,
-            "The Hitchhiker's Guide to the Galaxy",
-            "Douglas Adams",
-            "En komisk science fiction-serie",
-            "Science Fiction"
-        ],
-        [
-            14,
-            "The Chronicles of Narnia",
-            "C.S. Lewis",
-            "En serie fantasyromaner f\u00f6r barn",
-            "Fantasy"
-        ],
-        [
-            15,
-            "Brave New World",
-            "Aldous Huxley",
-            "En dystopisk roman som utforskar konsekvenserna av teknologi",
-            "Science Fiction"
-        ]
-    ],
-    "reviews": [
-        [
-            1,
-            "",
-            "",
-            "",
-            ""
-        ],
-        [
-            2,
-            "",
-            "",
-            "",
-            ""
-        ]
-    ]
-}
+{"books": [
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "summary": "A classic novel that explores racial injustice and moral growth in the American South.",
+      "genre": "Fiction"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "summary": "A dystopian novel set in a totalitarian society, known for its exploration of surveillance and control.",
+      "genre": "Science Fiction"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "summary": "A tale of love, wealth, and the American Dream set in the Roaring Twenties.",
+      "genre": "Fiction"
+    },
+    {
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "summary": "A modernist novel that explores the complexities of human relationships and the passage of time.",
+      "genre": "Fiction"
+    },
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "summary": "A comedic science fiction series that follows the misadventures of an unwitting human and his alien friend.",
+      "genre": "Science Fiction"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "summary": "A classic novel exploring themes of love, class, and social expectations in early 19th-century England.",
+      "genre": "Fiction"
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel Garcia Marquez",
+      "summary": "A magical realist novel that tells the multi-generational story of the Buendía family in the fictional town of Macondo.",
+      "genre": "Magical Realism"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "summary": "A coming-of-age novel narrated by a disenchanted teenager named Holden Caulfield.",
+      "genre": "Fiction"
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "summary": "The first book in the Harry Potter series, following the young wizard's journey at Hogwarts School of Witchcraft and Wizardry.",
+      "genre": "Fantasy"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "summary": "A dystopian novel that explores a future society where people are engineered for specific roles.",
+      "genre": "Science Fiction"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "summary": "A fantasy novel that follows the adventures of Bilbo Baggins as he helps a group of dwarves reclaim their homeland.",
+      "genre": "Fantasy"
+    },
+    {
+      "title": "The Shining",
+      "author": "Stephen King",
+      "summary": "A horror novel that tells the story of a family isolated in a haunted hotel during the winter.",
+      "genre": "Horror"
+    },
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "summary": "A trilogy that follows the quest to destroy the One Ring and defeat the Dark Lord Sauron.",
+      "genre": "Fantasy"
+    },
+    {
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "summary": "A Gothic novel that explores the consequences of scientific experimentation and the creation of life.",
+      "genre": "Gothic Fiction"
+    },
+    {
+      "title": "The Road",
+      "author": "Cormac McCarthy",
+      "summary": "A post-apocalyptic novel following a father and son's journey through a desolate landscape.",
+      "genre": "Post-Apocalyptic Fiction"
+    },
+    {
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "summary": "The first book in a dystopian series where teenagers fight to the death in an annual televised event.",
+      "genre": "Dystopian Fiction"
+    },
+    {
+      "title": "The Girl with the Dragon Tattoo",
+      "author": "Stieg Larsson",
+      "summary": "A psychological thriller that follows a journalist and a hacker as they investigate a wealthy family.",
+      "genre": "Mystery"
+    },
+    {
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "summary": "A novel that explores themes of guilt, redemption, and the impact of personal and political upheavals.",
+      "genre": "Fiction"
+    },
+    {
+      "title": "The Color Purple",
+      "author": "Alice Walker",
+      "summary": "An epistolary novel that tells the story of an African American woman's journey to self-discovery.",
+      "genre": "Fiction"
+    },
+    {
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "summary": "A mystery thriller that follows a symbologist and a cryptologist as they investigate a murder at the Louvre.",
+      "genre": "Mystery"
+    },
+    {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "summary": "A psychological novel that explores the consequences of a young man's decision to commit a crime.",
+      "genre": "Psychological Fiction"
+    },
+    {
+      "title": "The Martian",
+      "author": "Andy Weir",
+      "summary": "A science fiction novel that follows an astronaut stranded on Mars and his struggle for survival.",
+      "genre": "Science Fiction"
+    },
+    {
+      "title": "The Catch-22",
+      "author": "Joseph Heller",
+      "summary": "A satirical novel set during World War II, exploring the absurdities of bureaucracy and war.",
+      "genre": "Satirical Fiction"
+    },
+    {
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "summary": "An epic novel that follows Captain Ahab's obsessive quest for revenge against the white whale, Moby Dick.",
+      "genre": "Adventure"
+    },
+    {
+      "title": "The Handmaid's Tale",
+      "author": "Margaret Atwood",
+      "summary": "A dystopian novel that explores the oppression of women in the Republic of Gilead.",
+      "genre": "Dystopian Fiction"
+    },
+    {
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "summary": "A Gothic novel that tells the story of a man whose portrait ages while he remains young and indulges in a life of decadence.",
+      "genre": "Gothic Fiction"
+    },
+    {
+      "title": "The Three Musketeers",
+      "author": "Alexandre Dumas",
+      "summary": "An adventure novel that follows the escapades of d'Artagnan and the three musketeers in 17th-century France.",
+      "genre": "Adventure"
+    },
+    {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "summary": "An epic poem that follows the hero Odysseus as he journeys home after the Trojan War.",
+      "genre": "Epic Poetry"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "summary": "A philosophical novel that follows a young shepherd's journey to find his personal legend.",
+      "genre": "Philosophical Fiction"
+    },
+    {
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "summary": "A Gothic novel that explores themes of love and revenge on the Yorkshire moors.",
+      "genre": "Gothic Fiction"
+    },
+    {
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "summary": "A philosophical novel that examines the moral and spiritual struggles of three brothers.",
+      "genre": "Philosophical Fiction"
+    },
+    {
+      "title": "The Jungle Book",
+      "author": "Rudyard Kipling",
+      "summary": "A collection of stories featuring Mowgli, a young boy raised by wolves in the Indian jungle.",
+      "genre": "Children's Literature"
+    },
+    {
+      "title": "The Count of Monte Cristo",
+      "author": "Alexandre Dumas",
+      "summary": "An adventure novel that follows Edmond Dantès' quest for revenge after being wrongly imprisoned.",
+      "genre": "Adventure"
+    },
+    {
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "summary": "A Gothic horror novel that tells the story of Count Dracula's attempt to move from Transylvania to England.",
+      "genre": "Gothic Horror"
+    },
+    {
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "summary": "A novel that follows the Joad family's journey during the Great Depression, exploring themes of poverty and injustice.",
+      "genre": "Historical Fiction"
+    },
+    {
+      "title": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "summary": "A tragic novel that explores themes of love, infidelity, and societal expectations in 19th-century Russia.",
+      "genre": "Tragedy"
+    },
+    {
+      "title": "The Sound and the Fury",
+      "author": "William Faulkner",
+      "summary": "A modernist novel that explores the decline of the Compson family in the American South.",
+      "genre": "Modernist Fiction"
+    },
+    {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "summary": "An epic poem that follows the hero Odysseus as he journeys home after the Trojan War.",
+      "genre": "Epic Poetry"
+    },
+    {
+      "title": "The Road Not Taken",
+      "author": "Robert Frost",
+      "summary": "A collection of poems that explores choices, individuality, and the consequences of life's paths.",
+      "genre": "Poetry"
+    },
+    {
+      "title": "The Hound of the Baskervilles",
+      "author": "Arthur Conan Doyle",
+      "summary": "A mystery novel featuring Sherlock Holmes as he investigates the legend of a supernatural hound.",
+      "genre": "Mystery"
+    },
+    {
+      "title": "The Sun Also Rises",
+      "author": "Ernest Hemingway",
+      "summary": "A novel that explores the experiences of the 'Lost Generation' after World War I.",
+      "genre": "Modernist Fiction"
+    },
+    {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "summary": "An epic poem that follows the hero Odysseus as he journeys home after the Trojan War.",
+      "genre": "Epic Poetry"
+    },
+    {
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "summary": "A novella that tells the story of Gregor Samsa, who wakes up one day to find himself transformed into an insect.",
+      "genre": "Existential Fiction"
+    },
+    {
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "summary": "A novel set in 17th-century Puritan Massachusetts, exploring themes of sin and redemption.",
+      "genre": "Historical Fiction"
+    },
+    {
+      "title": "The Wind in the Willows",
+      "author": "Kenneth Grahame",
+      "summary": "A children's novel that follows the adventures of Mole, Rat, Toad, and Badger in the English countryside.",
+      "genre": "Children's Literature"
+    }
+  ],
+  
+  "reviews" :[
+    {
+      "book_id": 1,
+      "username": "reader1",
+      "rating": 5,
+      "review_text": "A powerful and thought-provoking novel that beautifully addresses societal issues."
+    },
+    {
+      "book_id": 1,
+      "username": "booklover_42",
+      "rating": 4,
+      "review_text": "The narrative depth and character development in this book are truly remarkable."
+    },
+    {
+      "book_id": 1,
+      "username": "curious_reader",
+      "rating": 3,
+      "review_text": "While the themes are important, the story's pacing felt a bit slow for my taste."
+    },
+    {
+      "book_id": 2,
+      "username": "scifi_fan",
+      "rating": 4,
+      "review_text": "An unsettling and prophetic vision of a dystopian future. A must-read for sci-fi enthusiasts."
+    },
+    {
+      "book_id": 2,
+      "username": "future_visionary",
+      "rating": 5,
+      "review_text": "Orwell's ability to foresee aspects of our present society is both impressive and unsettling."
+    },
+    {
+      "book_id": 2,
+      "username": "LiteraryVisionary",
+      "rating": 4,
+      "review_text": "Orwell's narrative mastery makes this a chilling exploration of the dangers of unchecked power."
+    },
+    {
+      "book_id": 2,
+      "username": "ThoughtProvoker",
+      "rating": 2,
+      "review_text": "A stark reminder of the fragility of freedom. Orwell's cautionary tale invites deep reflection."
+    },  
+    {
+      "book_id": 3,
+      "username": "gatsby_lover",
+      "rating": 5,
+      "review_text": "Fitzgerald's writing is exquisite, capturing the glamour and tragedy of the Roaring Twenties."
+    },
+    {
+      "book_id": 3,
+      "username": "timeless_romance",
+      "rating": 4,
+      "review_text": "The exploration of love and ambition in the Jazz Age is brilliantly depicted."
+    },
+    {
+      "book_id": 3,
+      "username": "book_critic",
+      "rating": 2,
+      "review_text": "The characters lacked depth, and the plot seemed predictable. Not Fitzgerald's best work."
+    },
+    {
+      "book_id": 3,
+      "username": "RoaringTwentiesFan",
+      "rating": 4,
+      "review_text": "Fitzgerald's portrayal of the Jazz Age is vivid, but some characters lacked relatability."
+    },
+    {
+      "book_id": 3,
+      "username": "LiteraryObserver",
+      "rating": 5,
+      "review_text": "The symbolism and social commentary make this a timeless exploration of the American Dream."
+    },
+    {
+      "book_id": 4,
+      "username": "modernist_reader",
+      "rating": 4,
+      "review_text": "Virginia Woolf's exploration of human relationships and inner thoughts is both challenging and rewarding."
+    },
+    {
+      "book_id": 4,
+      "username": "literary_explorer",
+      "rating": 5,
+      "review_text": "Woolf's stream-of-consciousness narrative is a literary marvel that captures the complexity of the human mind."
+    },
+    {
+      "book_id": 4,
+      "username": "IntellectualExplorer",
+      "rating": 4,
+      "review_text": "A complex and experimental narrative that rewards readers with a deeper understanding of human consciousness."
+    },
+    {
+      "book_id": 4,
+      "username": "LiteraryAdventurer",
+      "rating": 3,
+      "review_text": "The narrative style may be challenging for some, but the exploration of inner thoughts is noteworthy."
+    },
+    {
+      "book_id": 4,
+      "username": "ModernistAficionado",
+      "rating": 5,
+      "review_text": "Woolf's introspective narrative challenges the conventional, creating a literary journey of profound depth."
+    },
+    {
+      "book_id": 5,
+      "username": "funny_reader",
+      "rating": 5,
+      "review_text": "Douglas Adams' wit and humor make this sci-fi series an absolute delight to read."
+    },
+    {
+      "book_id": 5,
+      "username": "SciFiHilarist",
+      "rating": 4,
+      "review_text": "An uproarious journey through space, blending wit with cosmic absurdity. A comedic gem in the sci-fi genre."
+    },
+    {
+      "book_id": 5,
+      "username": "LaughInSpace",
+      "rating": 2,
+      "review_text": "A hilarious ride through the cosmos. Adams' wit and imagination shine in this comedic masterpiece."
+    },
+    {
+      "book_id": 5,
+      "username": "GalacticExplorer",
+      "rating": 5,
+      "review_text": "Douglas Adams' unique blend of humor and science fiction creates an interstellar adventure like no other."
+    },
+    {
+      "book_id": 6,
+      "username": "classic_lover",
+      "rating": 5,
+      "review_text": "A timeless classic that beautifully portrays the complexities of love and societal expectations."
+    },
+    {
+      "book_id": 6,
+      "username": "LiteraryAdmirer",
+      "rating": 5,
+      "review_text": "Captivating from start to finish, this classic delves into the intricacies of love and social expectations with timeless grace. A masterpiece."
+    },
+    {
+      "book_id": 6,
+      "username": "TimelessRomance",
+      "rating": 4,
+      "review_text": "The portrayal of love in the classic is both tender and poignant. A timeless exploration of relationships and societal norms."
+    },
+    {
+      "book_id": 7,
+      "username": "magical_realist",
+      "rating": 4,
+      "review_text": "Gabriel Garcia Marquez weaves a mesmerizing tapestry of magical realism in this multigenerational saga."
+    },
+    {
+      "book_id": 7,
+      "username": "SagaLover",
+      "rating": 4,
+      "review_text": "The multigenerational saga unfolds with Marquez's signature style, weaving tales of love, magic, and the intricacies of family. A mesmerizing literary journey."
+    },
+    {
+      "book_id": 7,
+      "username": "RealismEnthusiast",
+      "rating": 5,
+      "review_text": "Marquez's blend of magical realism creates a narrative that transcends time. A captivating exploration of the ordinary and the extraordinary."
+    },
+    {
+      "book_id": 8,
+      "username": "rebel_reader",
+      "rating": 3,
+      "review_text": "Holden Caulfield's perspective provides an interesting glimpse into teenage angst, but the story can be divisive."
+    },
+    {
+      "book_id": 8,
+      "username": "LiteraryDissenter",
+      "rating": 2,
+      "review_text": "While Holden's perspective offers a unique lens, the narrative feels disjointed, making it difficult to connect with the character's internal struggles."
+    },
+    {
+      "book_id": 8,
+      "username": "AngstExplorer",
+      "rating": 3,
+      "review_text": "Caulfield's rebellious journey mirrors the turbulence of teenage emotions. However, the narrative's lack of resolution may leave some readers wanting more closure."
+    },
+    {
+      "book_id": 8,
+      "username": "TeenageRebel",
+      "rating": 4,
+      "review_text": "Holden Caulfield's rebellious spirit resonates with the challenges of adolescence. A provocative exploration of identity and societal expectations."
+    },  
+    {
+      "book_id": 9,
+      "username": "potterhead",
+      "rating": 5,
+      "review_text": "The start of a magical journey that captivates readers of all ages. J.K. Rowling's world-building is phenomenal."
+    },
+    {
+      "book_id": 9,
+      "username": "WizardryAdventurer",
+      "rating": 4,
+      "review_text": "J.K. Rowling's magical world enchants readers once again. The blend of fantasy and coming-of-age themes makes for an engaging journey."
+    },
+    {
+      "book_id": 9,
+      "username": "WizardryAdmirer",
+      "rating": 5,
+      "review_text": "J.K. Rowling's magical world is a captivating escape into the realm of wizardry. The start of an enchanting journey filled with wonder and excitement."
+    },  
+    {
+      "book_id": 10,
+      "username": "dystopian_aficionado",
+      "rating": 4,
+      "review_text": "A thought-provoking exploration of a controlled society and the consequences of technological advancement."
+    },
+    {
+      "book_id": 10,
+      "username": "TechPhilosopher",
+      "rating": 4,
+      "review_text": "A compelling exploration of the consequences of technological advancement on society. Thought-provoking and relevant in today's world."
+    },
+    {
+      "book_id": 10,
+      "username": "TechPhilosopher",
+      "rating": 4,
+      "review_text": "A compelling exploration of the consequences of technological advancement on society. Thought-provoking and relevant in today's world."
+    },
+    {
+      "book_id": 10,
+      "username": "TechEthicist",
+      "rating": 3,
+      "review_text": "A speculative exploration of the consequences of advanced technology. While thought-provoking, some aspects felt too familiar in the dystopian genre."
+    },
+    {
+      "book_id": 11,
+      "username": "fantasy_enthusiast",
+      "rating": 5,
+      "review_text": "J.R.R. Tolkien's enchanting tale of adventure is a cornerstone of fantasy literature."
+    },
+    {
+      "book_id": 11,
+      "username": "AdventureLover",
+      "rating": 4,
+      "review_text": "Tolkien's world-building and storytelling create a captivating journey filled with mythical creatures and epic quests."
+    },
+    {
+      "book_id": 11,
+      "username": "BilboFanatic",
+      "rating": 5,
+      "review_text": "A timeless classic that introduces readers to the magical world of Middle-earth. Bilbo's adventure is both charming and epic."
+    },
+    {
+      "book_id": 11,
+      "username": "FantasyExplorer",
+      "rating": 5,
+      "review_text": "Tolkien's rich imagination transports readers to a realm of dragons, wizards, and daring adventures. A must-read for fantasy enthusiasts."
+    },
+    {
+      "book_id": 20,
+      "username": "RussianLiteratureFan",
+      "rating": 5,
+      "review_text": "A profound examination of the human psyche. Dostoevsky's insights into morality are thought-provoking."
+    },
+    {
+      "book_id": 20,
+      "username": "PhilosophicalReader",
+      "rating": 3,
+      "review_text": "While the philosophical aspects are intriguing, the dense narrative may be challenging for some."
+    },
+    {
+      "book_id": 20,
+      "username": "GuiltStruggler",
+      "rating": 4,
+      "review_text": "Dostoevsky's exploration of guilt and redemption is a psychological journey that stays with the reader."
+    },
+    {
+      "book_id": 25,
+      "username": "GalacticHumorist",
+      "rating": 2,
+      "review_text": "Adams' wit and imagination create a humorous space odyssey. A delightful escape to the absurd."
+    },
+    {
+      "book_id": 25,
+      "username": "CosmicLaughter",
+      "rating": 4,
+      "review_text": "A comedic journey through the cosmos that combines wit, satire, and absurdity. Highly entertaining!"
+    },
+    {
+      "book_id": 25,
+      "username": "SpaceExplorer42",
+      "rating": 5,
+      "review_text": "Douglas Adams' comedic genius shines in this intergalactic adventure. A must-read for sci-fi enthusiasts."
+    },
+    {
+      "book_id": 30,
+      "username": "DystopiaObserver",
+      "rating": 5,
+      "review_text": "Margaret Atwood's dystopian masterpiece is a chilling exploration of oppression and resistance."
+    },
+    {
+      "book_id": 30,
+      "username": "FeministReader",
+      "rating": 4,
+      "review_text": "A thought-provoking and unsettling narrative that resonates with its powerful social commentary."
+    },
+    {
+      "book_id": 30,
+      "username": "DystopianDreamer",
+      "rating": 4,
+      "review_text": "Atwood's portrayal of a dystopian society resonates with contemporary issues, offering a compelling narrative that provokes contemplation."
+    },
+    {
+      "book_id": 30,
+      "username": "ResistanceActivist",
+      "rating": 3,
+      "review_text": "While the dystopian themes are impactful, the narrative pacing felt uneven at times."
+    },
+    {
+      "book_id": 36,
+      "username": "EpicJourneySeeker",
+      "rating": 5,
+      "review_text": "Homer's epic poem is a timeless adventure that immerses readers in the world of gods and heroes."
+    },
+    {
+      "book_id": 36,
+      "username": "PoeticAdmirer",
+      "rating": 5,
+      "review_text": "Homer's poetic narrative weaves a spellbinding tale of adventure and resilience. A literary gem."
+    },
+    {
+      "book_id": 36,
+      "username": "MythicalQuester",
+      "rating": 4,
+      "review_text": "An enchanting odyssey filled with mythical creatures and heroic deeds. A classic for the ages."
+    },
+    {
+      "book_id": 38,
+      "username": "AdventureSeeker",
+      "rating": 5,
+      "review_text": "Captivating storytelling that brings the characters to life. I couldn't put it down!"
+    },
+    {
+      "book_id": 38,
+      "username": "BookLover123",
+      "rating": 4,
+      "review_text": "A delightful journey through the English countryside with charming characters. Perfect for children and those young at heart."
+    },
+    {
+      "book_id": 38,
+      "username": "NatureEnthusiast",
+      "rating": 3,
+      "review_text": "Enjoyable, but some parts felt a bit slow. Overall, a lovely read for a cozy afternoon."
+    },
+    {
+      "book_id": 40,
+      "username": "MetamorphicExplorer",
+      "rating": 4,
+      "review_text": "A unique exploration of existential themes through the lens of a bizarre and thought-provoking metamorphosis."
+    },
+    {
+      "book_id": 40,
+      "username": "LiteraryMetamorph",
+      "rating": 3,
+      "review_text": "While the existential themes are intriguing, the surreal narrative style may not be everyone's preference."
+    },
+    {
+      "book_id": 40,
+      "username": "KafkaEnthusiast",
+      "rating": 5,
+      "review_text": "Franz Kafka's novella is a surreal masterpiece that delves into the complexities of existential transformation."
+    },
+    {
+      "book_id": 40,
+      "username": "MetamorphosisObserver",
+      "rating": 4,
+      "review_text": "Kafka's exploration of existential transformation is a surreal journey that challenges conventional perceptions. A unique and thought-provoking novella."
+    },
+    {
+      "book_id": 43,
+      "username": "KafkaFanatic",
+      "rating": 5,
+      "review_text": "A surreal masterpiece! Kafka's exploration of existential themes is thought-provoking and unique."
+    },
+    {
+      "book_id": 43,
+      "username": "InsectAdmirer",
+      "rating": 4,
+      "review_text": "Fascinating and unsettling. The transformation concept is brilliantly executed, leaving a lasting impact."
+    },
+    {
+      "book_id": 43,
+      "username": "LiteraryExplorer",
+      "rating": 3,
+      "review_text": "While the premise is intriguing, I found some parts challenging to follow. Still, a unique literary experience."
+    },
+    {
+      "book_id": 42,
+      "username": "EpicQuester",
+      "rating": 5,
+      "review_text": "A timeless epic! Homer weaves an intricate and thrilling tale of adventure and perseverance."
+    },
+    {
+      "book_id": 42,
+      "username": "MythologyBuff",
+      "rating": 4,
+      "review_text": "An epic journey filled with gods, monsters, and heroism. A classic that never loses its magic."
+    },
+    {
+      "book_id": 42,
+      "username": "OdysseyEnthusiast",
+      "rating": 5,
+      "review_text": "Absolutely mesmerizing! Homer's poetic narrative takes you on an unforgettable odyssey."
+    }
+  
+  ]
+  }
