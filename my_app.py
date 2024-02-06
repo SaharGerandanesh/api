@@ -130,11 +130,16 @@ def get_reviews_for_book(book_id):
     reviews = Reviews.query.filter_by(book_id=book_id).all()
     return jsonify({"reviews": [{"id": review.id, "user": review.user, "rating": review.rating, "review_text": review.review_text} for review in reviews]})
 
+
 # Krav: GET /books/top - Hämtar de fem böckerna med högst genomsnittliga recensioner.
 @app.route('/books/top', methods=['GET'])
 @print_query
 def get_top_books():
-    top_books = db.session.query(Books, db.func.avg(Reviews.rating).label('average_rating')).join(Reviews).group_by(Books).order_by(db.desc('average_rating')).limit(5).all()
+    # Använd en subquery för att räkna totala betyg för varje bok
+    subquery = db.session.query(Reviews.book_id, db.func.sum(Reviews.rating).label('total_rating')).group_by(Reviews.book_id).subquery()
+    
+    # Gör en join mellan Books och subquery för att få totala betyg för varje bok
+    top_books = db.session.query(Books, subquery.c.total_rating).outerjoin(subquery, Books.id == subquery.c.book_id).order_by(db.desc(subquery.c.total_rating)).limit(5).all()
 
     # Kontrollera om top_books är tom
     if not top_books:
@@ -143,17 +148,18 @@ def get_top_books():
 
     # Skapa top_books_data
     top_books_data = []
-    for book, avg_rating in top_books:
+    for book, total_rating in top_books:
         top_books_data.append({
             "id": book.id,
             "title": book.title,
             "author": book.author,
             "summary": book.summary,
             "genre": book.genre,
-            "average_rating": avg_rating
+            "total_rating": total_rating
         })
     
     return jsonify({"top_books": top_books_data})
+
 
 
 # Krav: GET /author - Hämtar en kort sammanfattning om författaren och författarens mest kända verk.
